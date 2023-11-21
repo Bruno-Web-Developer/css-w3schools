@@ -1,0 +1,248 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    background-color: beige;
+    width: 94%;
+    margin: 5px auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+}
+
+hr {
+    border: 2px solid green;
+}
+
+p {
+    padding-left: 10px;
+    justify-content: left;
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    background-color: lightgreen;
+    border-radius: 12px;
+}
+
+img {
+    display: block;
+    margin: 10px auto;
+    width: 90%;
+    border-radius: 9px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.exemplo fieldset {
+    width: 90%;
+    border-radius: 8px;
+    background-color: aquamarine;
+    margin: 5px auto;
+}
+
+.quadro {
+    width: 90%;
+    background-color: ghostwhite;
+    margin: 5px auto;
+    padding: 8px;
+    border-radius: 12px;
+}
+
+.red {
+    color: red;
+    background-color: bisque;
+    padding: 2px;
+}
+
+.nota {
+    background-color: tomato;
+    border-radius: 10px;
+    padding: 7px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.subli {
+    text-decoration: underline;
+}
+
+
+/* ----- stylesheet1 ----- */
+
+.stylesheet1 button{
+    display: block;
+    width: 30%;
+    margin: 9px auto;
+}
+
+.stylesheet1 hr {
+    border: 1px solid red;
+}
+
+.stylesheet1 table {
+    margin: 10px auto;
+}
+
+.stylesheet1 table,th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.stylesheet1 td {
+    width: 80px;
+}
+
+.stylesheet1 h3, h4 {
+    color: red;
+}
+
+.stylesheet1 p {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: yellow;
+}
+
+.stylesheet1 img {
+    display: block;
+    margin: 5px auto;
+}
+
+.stylesheet1 a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* ----- class stylesheet2 ------ */
+
+.stylesheet2 button{
+    width: 30%;
+    margin: 9px 1%;
+    background-color: green;
+    color: white;
+    border-radius: 20%;
+}
+
+.stylesheet2 hr {
+    border: 1px solid;
+}
+
+.stylesheet2 table {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.stylesheet2 table,th, td {
+    border-color: red;
+    border-radius: 5px;
+}
+
+.stylesheet2 td {
+    width: 80px;
+}
+
+.stylesheet2 h3, h4 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.stylesheet2 p {
+    text-align: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.stylesheet2 img {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid violet;
+    border-radius: 50%
+}
+
+
+.stylesheet2 a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+/* ----- stylesheet3 ----- */
+
+
+.stylesheet3 button{
+    width: 150px;
+    margin: 10px 18px;
+    background-color: blue;
+    color: white;
+    border-radius: 30%;
+}
+
+.stylesheet3 hr {
+    box-shadow: 2px 2px 3px black;
+}
+
+.stylesheet3 table {
+    border-style: dotted;
+    margin: 0 auto;
+}
+
+.stylesheet3 table,th, td {
+    border-color: blue;
+    border-radius: 10%;
+}
+
+.stylesheet3 td {
+    width: 40%;
+}
+
+.stylesheet3 h3, h4 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: yellowgreen;
+}
+
+.stylesheet3 p {
+    text-align: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    letter-spacing: 5px;
+}
+
+@keyframes fluxo {
+    50% {
+        border-radius: 25%;
+    }
+    100% {
+        border-radius: 50%;
+    }
+}
+
+.stylesheet3 img {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid pink;
+    animation-name: fluxo;
+    animation-duration: 10s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+
+.stylesheet3 a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}

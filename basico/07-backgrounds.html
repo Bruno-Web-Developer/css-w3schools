@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Backgrounds</title>
+    <link rel="stylesheet" href="css/new-style.css">
+</head>
+<body>
+    <h1>CSS Backgrounds</h1>
+    <hr>
+    <p>
+        The CSS background properties are used to add background effects for elements.
+    </p>
+    <hr>
+    <p>
+        In these document, you will learn about the following CSS background properties:
+        <ul>
+            <li><b class="red">background-color</b></li>
+            <li><b class="red">background-image</b></li>
+            <li><b class="red">background-repeat</b></li>
+            <li><b class="red">background-attachment</b></li>
+            <li><b class="red">background-position</b></li>
+            <li><b class="red">background</b> (shorthand property</li>
+        </ul>
+    </p>
+    <hr>
+    <h2>CSS Background-Color</h2>
+    <p>
+        The <b class="red">background-color</b> property specifies the background color of an element.
+    </p>
+    <div class="exemplo">
+        <p>The background color of a page is set like this:</p>
+        <fieldset>
+            <pre>
+body {
+    background-color: lightblue;
+}
+            </pre>
+        </fieldset>
+    </div>
+    <hr>
+    <h2>Opacity / Transparency</h2>
+    <p>
+        The <b class="red">opacity</b> property specifies the opacity / transparency of an element. It can take a value from 0.0 - 1.0. The lower value, the more transparent:
+    </p>
+    <table style="border: none;width: 90%;">
+        <tr>
+            <td style="width: 20%;height: 50px;text-align: center;background-color: green;opacity: 1;">opacity <br>1</td>
+
+            <td style="width: 20%;height: 50px;text-align: center;background-color: green;opacity: .6;">opacity <br>0.6</td>
+
+            <td style="width: 20%;height: 50px;text-align: center;background-color: green;opacity: .3;">opacity <br>0.3</td>
+
+            <td style="width: 20%;height: 50px;text-align: center;background-color: green;opacity: .1;">opacity <br>0.1</td>
+        </tr>
+    </table>
+    <div class="nota">
+        <b>Note:</b> When using the <b class="red">opacity</b> property to add transparency to the back of an element, all of its child element inhertit the same transparency. This can make the text inside a fully transparent element hard to read. The opacity in RGBA and HSLA is set inside the parametres.
+    </div>
+    <hr>
+    <h2>CSS background-image</h2>
+    <p>
+        The <b class="red">background-image</b> property specifies an image to use as the background of an element, <br><br>
+        By default, the image is repeated so it covers the entire element.
+    </p>
+    <div style="background-image: url('image/img1.jpg');width: 330px;height: 186px;margin: 0 auto;opacity: .8;">
+        <p style="color: white;padding: 20px;text-align: justify;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eaque aperiam ipsam repudiandae recusandae minus!
+        </p>
+    </div>
+    <hr>
+    <h2>CSS background-repeat</h2>
+    <p>
+        By default, the <b class="red">background-image</b> property repeats an image both horizontally and vertically. <br><br>
+        Some images should be repeated only horizontally or vertically, or theu will look strange.
+    </p>
+</body>
+</html>

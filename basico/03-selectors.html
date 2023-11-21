@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" href="css/new-style.css">
+</head>
+<body>
+    <h1>CSS Selectors</h1>
+    <hr>
+    <p>
+        A CSS selector selects the HTML element(s) you want to style.
+    </p>
+    <hr>
+    <h2>CSS Selectors</h2>
+    <p>
+        CSS selectors are used to 'find' (or select) the HTML elements you want to style. <br><br>
+        We can divide CSS selectors into five categories:
+    </p>
+    <ul>
+        <li>Simple selectorsselect elementsbased on name, id, class</li>
+        <li>Combinator selectors select elementsbased on a specific relationship between them</li>
+        <li>Pseudo-class selectors select elements based on a certain state</li>
+        <li>Pseudo-elements selectors select and style a part of an element</li>
+        <li>Attribute selectors select elements based on an attribute or attribute value</li>
+    </ul>
+
+    <p>
+        This page will explain the most basic CSS selectors.
+    </p>
+    <hr>
+
+    <h2>
+        The CSS element Selector
+    </h2>
+    <p>
+        The element selector selects HTML elements based on the element name.
+    </p>
+    <div class="exemplo">
+        <p>
+            Here, all p elements on the page will be center-alligned, with a red text color:
+        </p>
+        <fieldset>
+            <pre>
+p {
+    text-align: center;
+    color: red;
+}
+            </pre>
+        </fieldset>
+    </div>
+    <div class="exemplo">
+        <h4>Practical Example</h4>
+        <p id="test1">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed quo rerum voluptate iusto! Temporibus quod similique possimus, asperiores natus consequatur!
+        </p>
+        <button onclick="document.getElementById('test1').className = 'test1'" class="botoes2">Apply</button>
+        <button onclick="document.getElementById('test1').className = ''" class="botoes2">Reset</button>
+    </div>
+    <hr>
+    <h2>The CSS id Slector</h2>
+    <p>
+        The id selector uses the id attribute of an HTML element to select a specific element. <br><br>
+        The id of an element is unique within a page, so he id selector is used to select one unique element. <br><br>
+        To select an element with a specific id, write a hash (#) character, followed by the id of the element.
+    </p>
+    <div class="exemplo">
+        <p>
+            The CSS rule below will be applied to the HTML element with id='demo':
+        </p>
+        <fieldset>
+            <pre>
+#demo {
+    font-family: Courier;
+    color: Arial;
+}
+            </pre>
+        </fieldset>
+    </div>
+    <div class="exemplo">
+        <h4>Practical Example</h4>
+        <p id="test2">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed quo rerum voluptate iusto! Temporibus quod similique possimus, asperiores natus consequatur!
+        </p>
+        <button onclick="document.getElementById('test2').className = 'test2'" class="botoes2">Apply</button>
+        <button onclick="document.getElementById('test2').className = ''" class="botoes2">Reset</button>
+    </div>
+    <div class="nota">
+        <p>
+            <b>Note</b>: An id name cannot start with a number!
+        </p>
+    </div>
+    <hr>
+    <h2>The CSS class Selector</h2>
+    <p>
+        The class selector selects HTML elements with a specific class atribute.
+        <br><br>To select elements with a specific class, write a period (.) character, followed by the class name.
+    </p>
+    <div class="exemplo">
+        <p>
+            In this example all HTML elements with class='demo' will be changed.
+        </p>
+        <fieldset>
+            <pre>
+#demo {
+    padding: 4px;
+    background-color: blue;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+            </pre>
+        </fieldset>
+    </div>
+    <div class="exemplo">
+        <h4>Practical Example</h4>
+        <p id="test3">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed quo rerum voluptate iusto! Temporibus quod similique possimus, asperiores natus consequatur!
+        </p>
+        <button onclick="document.getElementById('test3').className = 'test3'" class="botoes2">Apply</button>
+        <button onclick="document.getElementById('test3').className = ''" class="botoes2">Reset</button>
+    </div>
+    <hr>
+    <h2>The CSS Universal Selector</h2>
+    <p>The universal selector (*) select all HTML elements on the page.</p>
+    <div class="exemplo">
+        <p>The CSS rule below will affect every HTML element on the page:</p>
+        <fieldset>
+            <pre>
+* {
+    text-align: center;
+    color: blue;
+}
+            </pre>
+        </fieldset>
+    </div>
+    <hr>
+    <h2>The CSS Grouping Selector</h2>
+    <p>
+        The groupimg selector selcts all the HTML element with the same style definitions. <br><br>
+        Look at the following CSS code (the h1, h2 and p elements have the same style efinitions):
+    </p>
+    <div class="exemplo">
+        <fieldset>
+            <pre>
+h1, h2, p {
+    text-align: center;
+    color: red;
+}
+            </pre>
+        </fieldset>
+    </div>
+    <hr>
+    <h2>All CSS Simple Selectors</h2>
+    <table>
+        <tr>
+            <th>Selector</th>
+            <th>Example</th>
+            <th>Example description</th>
+        </tr>
+        <tr>
+            <td>#id</td>
+            <td>#firstName</td>
+            <td>Selects the element with id='firstName'</td>
+        </tr>
+        <tr>
+            <td>.class</td>
+            <td>.intro</td>
+            <td>Selects all elements with class='intro'</td>
+        </tr>
+        <tr>
+            <td>element.class</td>
+            <td>h1.intro</td>
+            <td>Selects only h1 elements with class='intro'</td>
+        </tr>
+        <tr>
+            <td>*</td>
+            <td>*</td>
+            <td>Selects all elements</td>
+        </tr>
+        <tr>
+            <td>element</td>
+            <td>p</td>
+            <td>Select all p elements</td>
+        </tr>
+        <tr>
+            <td>element,element...</td>
+            <td>div, p</td>
+            <td>Select all div and p elements</td>
+        </tr>
+    </table>
+    <br>
+    <button onclick="location = '04-how-to-add.html'" class="botoes">Next ></button>
+</body>
+</html>

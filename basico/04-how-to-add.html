@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How To Add CSS</title>
+    <link rel="stylesheet" href="css/new-style.css">
+</head>
+<body>
+    <h1>How To Add CSS</h1>
+    <hr>
+    <p>
+        When a browser reads a style sheet, it will format the HTML document according to the information in the style sheet.
+    </p>
+    <hr>
+    <h2>Three Ways to Insert CSS</h2>
+    <p>
+        There are three ways of inserting a style sheet:
+        <ul>
+            <li>External CSS</li>
+            <li>Internal CSS</li>
+            <li>Inline CSS</li>
+        </ul>
+    </p>
+    <hr>
+    <h2>External CSS</h2>
+    <p>
+        With an external style sheet, you can change the look of an entire website by changing just one file! <br><br>
+        Each HTML page must include a refrence to the external style sheet file inside the link element, inside the head section.
+    </p>
+    <div class="exemplo">
+        <p>External styles are defined within the link element, inside the head section of an HTML page:</p>
+        <fieldset>
+            <pre>
+&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+    &lt;link rel="stylesheet" href="mystyle.css">
+&lt;/head>
+&lt;body>
+
+    &lt;h1>This is a heading&lt;/h1>
+    &lt;p>This is a paragraph.&lt;/p>
+
+&lt;/body>
+&lt;/html>        
+            </pre>
+        </fieldset>
+    </div>
+    <p>
+        An external style sheet can be written in any text editor, and must be saved with a .css extension. <br><br>
+        The external .css file should not contain any hTML tags. <br><br>
+        Here is how the 'mystyle.css' file looks.
+    </p>
+    <div class="exemplo">
+        <h3>'mystyle.css'</h3>
+        <fieldset>
+            <pre>
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
+            </pre>
+        </fieldset>
+    </div>
+    <div class="nota">
+        <b>Note:</b> Do not add a space between the property value (20) and the unit (px): <br><br>
+        Incorrect: margin-left: 20 px; <br>
+        Correct: margin-left: 20px;
+    </div>
+    <hr>
+    <h2>Internal CSS</h2>
+    <p>
+        An internal style sheet may be used if one single page has a unique style. <br><br>
+        The internal style is defined inside the style element, inside the head section.
+    </p>
+    <div class="exemplo">
+        <p>Internal styles are defined within the style element, inside the head section of an HTML page:</p>
+        <fieldset>
+            <pre>
+&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+    &lt;style>
+        body {
+        background-color: linen;
+        }
+
+        h1 {
+        color: maroon;
+        margin-left: 40px;
+        }
+    &lt;/style>
+&lt;/head>
+&lt;body>
+
+    &lt;h1>This is a heading&lt;/h1>
+    &lt;p>This is a paragraph.&lt;/p>
+
+&lt;/body>
+&lt;/html>
+            </pre>
+        </fieldset>
+    </div>
+    <hr>
+    <h2>Inline CSS</h2>
+    <p>
+        An inline style may be used to apply a unique style for a single element. <br><br>
+        To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.
+    </p>
+    <div class="exemplo">
+        <p>Inline styles are defined within the style attribute of the relevant element:</p>
+        <fieldset>
+            <pre>
+&lt;!DOCTYPE html>
+&lt;html>
+&lt;body>
+
+    &lt;h1 style="color:blue;text-align:center;">
+        This is a heading
+    &lt;/h1>
+    &lt;p style="color:red;">
+        This is a paragraph.
+    &lt;/p>
+
+&lt;/body>
+&lt;/html>
+            </pre>
+        </fieldset>
+    </div>
+    <div class="nota">
+        <b>Tip:</b> An inline style loses many of the advantages of a style sheet (by mixing content with presentation). Use this method sparingly.,
+    </div>
+    <hr>
+    <h2>Multiple Style Sheets</h2>
+    <p>
+        If some properties have benn defined for the same selector (element) in different style sheets, the value from the last read style sheets will be used. <br><br>
+        What style will be used when there is more than one style specified for an HTML element? <br><br>
+        All the styles in a page will 'cascade' into a new 'virtual' style sheet by following rules, where number one has the highest priority:
+        <ol>
+            <li>Inline style</li>
+            <li>External and internal style sheets (in the head section)</li>
+            <li>Browser default</li>
+        </ol>
+        So, an inline style has the highest priority, and will override external and internal styles and browser defaults.
+    </p>
+    <button onclick="location = '05-comments.html'" class="botoes">Next ></button>
+</body>
+</html>
